@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<title>Du Lịch Huế - Hành Trình Di Sản</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family: 'Segoe UI', sans-serif;
+    line-height:1.6;
+    background:#f5f5f5;
+    color:#333;
+}
+
+/* ===== HERO ===== */
+.hero{
+    background:url("https://images.unsplash.com/photo-1583394293214-28ded15ee548") center/cover no-repeat;
+    height:420px;
+    position:relative;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    color:#fff;
+}
+.hero::after{
+    content:"";
+    position:absolute;
+    inset:0;
+    background:rgba(0,0,0,0.5);
+}
+.hero-content{
+    position:relative;
+    z-index:2;
+}
+.hero h1{
+    font-size:3rem;
+    margin-bottom:10px;
+}
+.hero p{
+    font-size:1.2rem;
+}
+
+/* ===== NAV ===== */
+nav{
+    background:#7b1fa2;
+    text-align:center;
+    padding:12px;
+    position:sticky;
+    top:0;
+    z-index:999;
+}
+nav a{
+    color:#fff;
+    text-decoration:none;
+    margin:0 18px;
+    font-weight:bold;
+    transition:0.3s;
+}
+nav a:hover{
+    color:#ffeb3b;
+}
+
+/* ===== SECTION ===== */
+.container{
+    width:85%;
+    margin:40px auto;
+}
+
+section{
+    margin-bottom:50px;
+    background:#fff;
+    padding:30px;
+    border-radius:10px;
+    box-shadow:0 8px 20px rgba(0,0,0,0.08);
+}
+
+h2{
+    color:#7b1fa2;
+    margin-bottom:15px;
+    border-bottom:3px solid #7b1fa2;
+    display:inline-block;
+    padding-bottom:5px;
+}
+
+/* ===== CARD ===== */
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+.card{
+    background:#fafafa;
+    border-radius:8px;
+    overflow:hidden;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+    transition:0.3s;
+}
+.card:hover{
+    transform:translateY(-5px);
+}
+.card img{
+    width:100%;
+    height:180px;
+    object-fit:cover;
+}
+.card-content{
+    padding:15px;
+}
+.card-content h3{
+    color:#6a1b9a;
+    margin-bottom:8px;
+}
+
+/* ===== FORM ===== */
+form input, form textarea{
+    width:100%;
+    padding:10px;
+    margin-top:8px;
+    border-radius:5px;
+    border:1px solid #ccc;
+}
+button{
+    background:#7b1fa2;
+    color:#fff;
+    padding:10px 18px;
+    border:none;
+    margin-top:12px;
+    border-radius:5px;
+    cursor:pointer;
+}
+button:hover{
+    background:#4a148c;
+}
+
+/* ===== BACK TO TOP ===== */
+#backTop{
+    position:fixed;
+    bottom:25px;
+    right:25px;
+    background:#7b1fa2;
+    color:#fff;
+    padding:12px 16px;
+    border-radius:50%;
+    font-size:20px;
+    cursor:pointer;
+    display:none;
+}
+
+/* ===== FOOTER ===== */
+footer{
+    background:#7b1fa2;
+    color:#fff;
+    text-align:center;
+    padding:20px;
+}
+</style>
+</head>
+
+<body id="top">
+
+<!-- HERO -->
+<div class="hero">
+    <div class="hero-content">
+        <h1>Du Lịch Huế</h1>
+        <p>Vẻ đẹp trầm mặc – Di sản văn hóa – Ẩm thực tinh tế</p>
+    </div>
+</div>
+
+<!-- NAV -->
+<nav>
+    <a href="#gioithieu">Giới thiệu</a>
+    <a href="#diadiem">Địa điểm</a>
+    <a href="#amthuc">Ẩm thực</a>
+    <a href="#ykien">Góp ý</a>
+</nav>
+
+<div class="container">
+
+<section id="gioithieu">
+    <h2>Giới thiệu về Huế</h2>
+    <p>
+        Huế là cố đô của Việt Nam dưới triều Nguyễn. Thành phố nổi tiếng với quần thể di tích cung đình,
+        kiến trúc lăng tẩm, chùa chiền và vẻ đẹp thơ mộng của sông Hương – núi Ngự.
+        Huế mang nét đẹp nhẹ nhàng, sâu lắng và giàu giá trị văn hóa truyền thống.
+    </p>
+</section>
+
+<section id="diadiem">
+    <h2>Địa điểm nổi bật</h2>
+    <div class="cards">
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1567789884554-0b844b597180">
+            <div class="card-content">
+                <h3>Kinh Thành Huế</h3>
+                <p>Di sản văn hóa thế giới được UNESCO công nhận.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1590031905406-f18a426d772d">
+            <div class="card-content">
+                <h3>Chùa Thiên Mụ</h3>
+                <p>Ngôi chùa cổ kính bên dòng sông Hương.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1603565816030-6b389eeb23cb">
+            <div class="card-content">
+                <h3>Lăng Khải Định</h3>
+                <p>Công trình kiến trúc kết hợp Á – Âu độc đáo.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="amthuc">
+    <h2>Ẩm thực Huế</h2>
+    <p>
+        Nhắc đến Huế không thể bỏ qua bún bò Huế, cơm hến, bánh bèo, bánh nậm,
+        chè Huế… Ẩm thực nơi đây tinh tế, đậm đà và mang phong vị cung đình xưa.
+    </p>
+</section>
+
+<section id="ykien">
+    <h2>Gửi ý kiến đóng góp</h2>
+    <form action="mailto:youremail@gmail.com" method="post" enctype="text/plain">
+        <label>Họ và tên:</label>
+        <input type="text" required>
+
+        <label>Email:</label>
+        <input type="email" required>
+
+        <label>Nội dung góp ý:</label>
+        <textarea rows="4" required></textarea>
+
+        <button type="submit">Gửi ý kiến</button>
+    </form>
+</section>
+
+</div>
+
+<!-- Back to Top -->
+<div id="backTop" onclick="window.location='#top'">↑</div>
+
+<!-- FOOTER -->
+<footer>
+    <p>© 2026 Du Lịch Huế</p>
+    <p>Số lượt truy cập: <span id="counter">0</span></p>
+</footer>
+
+<script>
+/* Hiện nút mũi tên khi cuộn */
+window.onscroll = function() {
+    document.getElementById("backTop").style.display =
+        document.documentElement.scrollTop > 300 ? "block" : "none";
+};
+
+/* Bộ đếm lượt truy cập */
+if(localStorage.getItem("visitCount")){
+    localStorage.setItem("visitCount",
+        Number(localStorage.getItem("visitCount")) + 1);
+}else{
+    localStorage.setItem("visitCount",1);
+}
+document.getElementById("counter").innerText =
+    localStorage.getItem("visitCount");
+</script>
+
+</body>
+</html>
