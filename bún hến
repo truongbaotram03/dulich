@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<title>Bún Hến Huế</title>
+
+<style>
+body{
+    margin:0;
+    font-family: Arial, sans-serif;
+    background:#f5f0fa;
+    color:#333;
+}
+
+header{
+    background:#6a1b9a;
+    color:white;
+    text-align:center;
+    padding:30px;
+}
+
+header h1{
+    margin:0;
+    font-size:40px;
+}
+
+nav{
+    background:#8e44ad;
+    text-align:center;
+    padding:10px;
+}
+
+nav a{
+    color:white;
+    margin:0 15px;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+nav a:hover{
+    text-decoration:underline;
+}
+
+.container{
+    width:80%;
+    margin:auto;
+    padding:30px 0;
+}
+
+.section{
+    margin-bottom:40px;
+}
+
+.section h2{
+    color:#6a1b9a;
+}
+
+.food-img{
+    width:100%;
+    max-width:600px;
+    display:block;
+    margin:20px auto;
+    border-radius:10px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.2);
+}
+
+.card{
+    background:white;
+    padding:20px;
+    border-radius:10px;
+    box-shadow:0 3px 8px rgba(0,0,0,0.1);
+}
+
+footer{
+    background:#6a1b9a;
+    color:white;
+    text-align:center;
+    padding:15px;
+    margin-top:40px;
+}
+</style>
+
+</head>
+
+<body>
+
+<header>
+<h1>Bún Hến – Đặc Sản Cố Đô Huế</h1>
+<p>Món ăn dân dã mang đậm hương vị miền Trung</p>
+</header>
+
+<nav>
+<a href="#">Trang chủ</a>
+<a href="#">Giới thiệu</a>
+<a href="#">Nguyên liệu</a>
+<a href="#">Văn hóa Huế</a>
+</nav>
+
+<div class="container">
+
+<div class="section card">
+<h2>Giới thiệu về Bún Hến</h2>
+<p>
+Bún hến là một món ăn nổi tiếng của ẩm thực Huế, có nguồn gốc từ vùng Cồn Hến 
+trên sông Hương. Món ăn này nổi bật với hương vị thanh mát, đậm đà và sự hòa quyện 
+giữa nhiều nguyên liệu dân dã như hến xào, bún tươi, rau sống, đậu phộng rang và 
+mắm ruốc Huế đặc trưng.
+</p>
+
+<img class="food-img"
+src="https://cdn.tgdd.vn/2020/07/CookRecipe/Avatar/bun-hen-thumbnail.jpg">
+</div>
+
+
+<div class="section card">
+<h2>Nguyên liệu chính</h2>
+
+<ul>
+<li>Bún tươi</li>
+<li>Hến xào với gia vị</li>
+<li>Rau sống (bắp chuối, rau thơm, giá đỗ)</li>
+<li>Đậu phộng rang</li>
+<li>Da heo chiên giòn</li>
+<li>Mắm ruốc Huế</li>
+<li>Ớt và sa tế</li>
+</ul>
+
+<p>
+Sự kết hợp của các nguyên liệu này tạo nên một món ăn vừa cay, vừa thơm, 
+vừa giòn, thể hiện rõ nét phong cách ẩm thực tinh tế của người Huế.
+</p>
+</div>
+
+
+<div class="section card">
+<h2>Bún Hến trong văn hóa Huế</h2>
+<p>
+Không chỉ là một món ăn bình dân, bún hến còn là một phần của văn hóa ẩm thực Huế. 
+Người Huế thường thưởng thức bún hến vào buổi sáng hoặc buổi trưa. 
+Món ăn này phản ánh lối sống giản dị, tinh tế và sự khéo léo trong cách kết hợp 
+nguyên liệu của người dân cố đô.
+</p>
+
+<img class="food-img"
+src="https://nethue.com.vn/temp/-uploaded-san%20pham_bun%20hen_cr_521x521.jpg">
+</div>
+
+</div>
+
+<footer>
+<p>Website giới thiệu ẩm thực Huế | Thiết kế bởi học sinh</p>
+</footer>
+
+</body>
+</html>
