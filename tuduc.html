@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<title>Lăng Tự Đức</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+
+body{
+    margin:0;
+    font-family:"Segoe UI",sans-serif;
+    background:#f5f0fa;
+    color:#333;
+}
+
+header{
+    background:#6a1b9a;
+    color:white;
+    text-align:center;
+    padding:30px;
+}
+
+header h1{
+    margin:0;
+    font-size:42px;
+}
+
+header p{
+    margin-top:10px;
+}
+
+.container{
+    width:80%;
+    margin:auto;
+    padding:30px 0;
+}
+
+.section{
+    margin-bottom:40px;
+}
+
+.section h2{
+    color:#6a1b9a;
+}
+
+.food-img{
+    width:100%;
+    max-width:600px;
+    display:block;
+    margin:20px auto;
+    border-radius:12px;
+    box-shadow:0 5px 12px rgba(0,0,0,0.2);
+}
+
+.card{
+    background:white;
+    padding:25px;
+    border-radius:12px;
+    box-shadow:0 4px 12px rgba(0,0,0,0.1);
+}
+
+footer{
+    background:#6a1b9a;
+    color:white;
+    text-align:center;
+    padding:15px;
+    margin-top:40px;
+}
+
+@keyframes slideDown{
+from{transform:translateY(-50px);opacity:0;}
+to{transform:translateY(0);opacity:1;}
+}
+
+
+.back-circle{
+position:fixed;
+bottom:30px;
+right:30px;
+background:#6a0dad;
+color:white;
+border:none;
+padding:12px 18px;
+border-radius:50px;
+cursor:pointer;
+}
+
+.back-circle:hover{
+background:#8e44ad;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>Lăng Tự Đức – Nơi Lịch Sử Hòa Cùng Thi Ca</h1>
+<p>Lạc bước giữa hoàng lăng thơ mộng xứ Huế</p>
+</header>
+
+
+<div class="container">
+
+<div class="section card">
+<h2>Giới thiệu về Lăng Tự Đức</h2>
+<p>
+Lăng Tự Đức nằm tại Huế, là nơi an nghỉ của vua Tự Đức – vị vua thứ tư của Triều Nguyễn. Lăng được xây dựng từ năm 1864 với không gian rộng lớn, bao quanh bởi hồ nước, đồi thông và nhiều công trình kiến trúc cổ kính. Với vẻ đẹp yên bình và thơ mộng, lăng Tự Đức được xem là một trong những lăng tẩm đẹp và giàu chất thơ nhất của cố đô Huế.
+</p>
+
+<img class="food-img"
+src="https://queenbus.com.vn/wp-content/uploads/2025/07/Ch-nen-Noi-vua-Tu-Duc-danh-phan-lon-thoi-gian-cua-minh-de-nghi-ngoi-Anh_-Suu-tam-768x512.png">
+</div>
+
+
+<div class="section card">
+<h2>Cấu trúc sơ bộ của lăng</h2>
+
+<p>
+Quần thể lăng gồm nhiều công trình kiến trúc hài hòa với thiên nhiên:
+</p>
+
+<ul>
+<li>Khiêm Cung Môn: cổng chính dẫn vào khu lăng.</li>
+<li>Điện Hòa Khiêm: nơi thờ vua Tự Đức.</li>
+<li>Hồ Lưu Khiêm: hồ nước lớn tạo nên cảnh quan thơ mộng.</li>
+<li>Xung Khiêm Tạ và Dũ Khiêm Tạ: nơi vua Tự Đức nghỉ ngơi, làm thơ và ngắm cảnh.</li>
+<li>Bửu Thành: nơi đặt mộ phần của vua.</li>
+</ul>
+
+
+</div>
+
+
+<div class="section card">
+<h2>Lăng Tự Đức và giá trị lịch sử văn hóa</h2>
+<p>
+Lăng Tự Đức không chỉ là nơi an nghỉ của vua Tự Đức mà còn là một công trình kiến trúc mang vẻ đẹp thơ mộng của Huế. Với sự kết hợp hài hòa giữa kiến trúc cổ kính và cảnh quan thiên nhiên, lăng Tự Đức thể hiện rõ nét văn hóa và nghệ thuật của Triều Nguyễn, góp phần làm nổi bật giá trị lịch sử của vùng đất cố đô.
+</p>
+
+<img class="food-img"
+src="https://queenbus.com.vn/wp-content/uploads/2025/07/Ch-nen-Tam-bia-do-chinh-tay-vua-Tu-Duc-viet-Anh_-Suu-tam-768x512.png">
+</div>
+
+</div>
+
+<footer>
+<p>Địa điểm nổi bật | Website giới thiệu về Huế</p>
+</footer>
+
+
+<button onclick="history.back()" class="back-circle">↑</button>
+
+<script>
+
+function scrollToTop(){
+window.scrollTo({
+top:0,
+behavior:"smooth"
+});
+}
+
+let visit=localStorage.getItem("visit");
+
+if(visit){
+visit++;
+}else{
+visit=1;
+}
+
+localStorage.setItem("visit",visit);
+
+document.getElementById("visit").innerText=visit;
+
+</script>
+</body>
+</html>
