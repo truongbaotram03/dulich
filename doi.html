@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<title>Đồi Vọng Cảnh</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+
+body{
+    margin:0;
+    font-family:"Segoe UI",sans-serif;
+    background:#f5f0fa;
+    color:#333;
+}
+
+header{
+    background:#6a1b9a;
+    color:white;
+    text-align:center;
+    padding:30px;
+}
+
+header h1{
+    margin:0;
+    font-size:42px;
+}
+
+header p{
+    margin-top:10px;
+}
+
+.container{
+    width:80%;
+    margin:auto;
+    padding:30px 0;
+}
+
+.section{
+    margin-bottom:40px;
+}
+
+.section h2{
+    color:#6a1b9a;
+}
+
+.food-img{
+    width:100%;
+    max-width:600px;
+    display:block;
+    margin:20px auto;
+    border-radius:12px;
+    box-shadow:0 5px 12px rgba(0,0,0,0.2);
+}
+
+.card{
+    background:white;
+    padding:25px;
+    border-radius:12px;
+    box-shadow:0 4px 12px rgba(0,0,0,0.1);
+}
+
+footer{
+    background:#6a1b9a;
+    color:white;
+    text-align:center;
+    padding:15px;
+    margin-top:40px;
+}
+
+@keyframes slideDown{
+from{transform:translateY(-50px);opacity:0;}
+to{transform:translateY(0);opacity:1;}
+}
+
+
+.back-circle{
+position:fixed;
+bottom:30px;
+right:30px;
+background:#6a0dad;
+color:white;
+border:none;
+padding:12px 18px;
+border-radius:50px;
+cursor:pointer;
+}
+
+.back-circle:hover{
+background:#8e44ad;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>Đồi Vọng Cảnh – Góc Nhìn Thơ Mộng Cố Đô</h1>
+<p>Ngắm trọn vẻ đẹp Huế từ một góc bình yên.</p>
+</header>
+
+
+<div class="container">
+
+<div class="section card">
+<h2>Giới thiệu về Đồi Vọng Cảnh</h2>
+<p>
+Đồi Vọng Cảnh là một trong những điểm ngắm cảnh đẹp và nổi tiếng tại Huế. Nằm bên dòng Sông Hương thơ mộng, ngọn đồi mang đến tầm nhìn rộng mở với khung cảnh thiên nhiên xanh mát, đồi thông và những lăng tẩm cổ kính xung quanh. Từ trên đồi, du khách có thể chiêm ngưỡng vẻ đẹp yên bình và thơ mộng đặc trưng của cố đô Huế.
+</p>
+
+<img class="food-img"
+src="https://statics.vinpearl.com/doi-vong-canh-hue-1_1690374854.jpg">
+</div>
+
+
+<div class="section card">
+<h2>Cảnh quan Đồi Vọng Cảnh.</h2>
+
+<p>
+Khu vực đồi Vọng Cảnh gồm:
+</p>
+
+<ul>
+<li>Đỉnh đồi: nơi có thể quan sát toàn cảnh sông Hương và thiên nhiên xung quanh.</li>
+<li>Đường lên đồi: con đường uốn lượn giữa rừng thông xanh mát.</li>
+<li>Khu vực ngắm cảnh: nơi du khách dừng chân chụp ảnh và ngắm cảnh.</li>
+<li>Không gian thiên nhiên xung quanh: gồm đồi thông, sông Hương và các lăng tẩm gần đó.</li>
+</ul>
+
+<p>
+Cấu trúc tự nhiên hài hòa giữa đồi, rừng thông và sông Hương đã tạo nên vẻ đẹp thơ mộng đặc trưng của đồi Vọng Cảnh.
+</p>
+
+</div>
+
+
+<div class="section card">
+<h2>Đồi Vọng Cảnh trong vẻ đẹp thiên nhiên Huế.</h2>
+<p>
+Đồi Vọng Cảnh không chỉ là một điểm ngắm cảnh nổi tiếng mà còn là nơi thể hiện rõ vẻ đẹp thơ mộng của Huế. Với khung cảnh thiên nhiên yên bình bên dòng Sông Hương, nơi đây đã trở thành điểm đến yêu thích của du khách khi muốn cảm nhận vẻ đẹp thanh bình và lãng mạn của cố đô Huế.
+</p>
+
+<img class="food-img"
+src="https://booking.muongthanh.com/upload_images/images/H%60/doi-vong-canh(1).jpg">
+</div>
+
+</div>
+
+<footer>
+<p>Địa điểm nổi bật | Website giới thiệu về Huế</p>
+</footer>
+
+
+<button onclick="history.back()" class="back-circle">↑</button>
+
+<script>
+
+function scrollToTop(){
+window.scrollTo({
+top:0,
+behavior:"smooth"
+});
+}
+
+let visit=localStorage.getItem("visit");
+
+if(visit){
+visit++;
+}else{
+visit=1;
+}
+
+localStorage.setItem("visit",visit);
+
+document.getElementById("visit").innerText=visit;
+
+</script>
+</body>
+</html>
