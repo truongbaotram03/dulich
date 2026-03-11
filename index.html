@@ -478,17 +478,11 @@ behavior:"smooth"
 }
 
 
-let visit=localStorage.getItem("visit");
-
-if(visit){
-visit++;
-}else{
-visit=1;
-}
-
-localStorage.setItem("visit",visit);
-
-document.getElementById("visit").innerText=visit;
+fetch("https://api.countapi.xyz/hit/dulichhue/visits")
+.then(res=>res.json())
+.then(res=>{
+document.getElementById("visit").innerText=res.value;
+});
 
 </script>
 
