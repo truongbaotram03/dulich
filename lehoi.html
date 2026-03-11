@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<title>Lễ Hội Huế</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+
+body{
+    margin:0;
+    font-family:"Segoe UI",sans-serif;
+    background:#f5f0fa;
+    color:#333;
+}
+
+header{
+    background:#6a1b9a;
+    color:white;
+    text-align:center;
+    padding:30px;
+}
+
+header h1{
+    margin:0;
+    font-size:42px;
+}
+
+header p{
+    margin-top:10px;
+}
+
+.container{
+    width:80%;
+    margin:auto;
+    padding:30px 0;
+}
+
+.section{
+    margin-bottom:40px;
+}
+
+.section h2{
+    color:#6a1b9a;
+}
+
+.food-img{
+    width:100%;
+    max-width:600px;
+    display:block;
+    margin:20px auto;
+    border-radius:12px;
+    box-shadow:0 5px 12px rgba(0,0,0,0.2);
+}
+
+.card{
+    background:white;
+    padding:25px;
+    border-radius:12px;
+    box-shadow:0 4px 12px rgba(0,0,0,0.1);
+}
+
+footer{
+    background:#6a1b9a;
+    color:white;
+    text-align:center;
+    padding:15px;
+    margin-top:40px;
+}
+
+/* NÚT TRÒN QUAY LẠI */
+.back-circle{
+position:fixed;
+bottom:30px;
+right:30px;
+background:#6a0dad;
+color:white;
+border:none;
+padding:12px 18px;
+border-radius:50px;
+cursor:pointer;
+}
+
+.back-circle:hover{
+background:#8e44ad;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>Lễ Hội Huế</h1>
+<p>Nét văn hóa đặc sắc của vùng đất cố đô</p>
+</header>
+
+
+<div class="container">
+
+<div class="section card">
+<h2>Giới thiệu về Lễ hội Huế</h2>
+<p>
+Lễ hội Huế là một trong những sự kiện văn hóa lớn và nổi tiếng của Việt Nam,
+được tổ chức nhằm tôn vinh và quảng bá các giá trị văn hóa truyền thống của cố đô Huế.
+Lễ hội quy tụ nhiều hoạt động nghệ thuật, trình diễn văn hóa, tái hiện các nghi lễ cung đình
+và các chương trình giao lưu quốc tế đặc sắc.
+</p>
+
+<img class="food-img"
+src="https://static.vinwonders.com/production/2025/05/le-hoi-hue-banner.jpg">
+
+</div>
+
+
+<div class="section card">
+<h2>Hoạt động nổi bật</h2>
+
+<ul>
+<li>Biểu diễn Nhã nhạc cung đình Huế.</li>
+<li>Lễ diễu hành đường phố với trang phục truyền thống.</li>
+<li>Các chương trình nghệ thuật quốc tế.</li>
+<li>Triển lãm văn hóa, ẩm thực và thủ công mỹ nghệ.</li>
+</ul>
+
+<img class="food-img"
+src="https://media-cdn-v2.laodong.vn/storage/newsportal/2024/1/2/1287586/Fesitval-Hue.jpeg">
+
+</div>
+
+
+<div class="section card">
+<h2>Ý nghĩa văn hóa</h2>
+
+<p>
+Lễ hội Huế không chỉ là sự kiện giải trí mà còn là dịp để bảo tồn và phát huy
+các giá trị văn hóa truyền thống của Việt Nam. Thông qua các hoạt động lễ hội,
+du khách trong và ngoài nước có cơ hội tìm hiểu sâu hơn về lịch sử,
+văn hóa và nghệ thuật của vùng đất cố đô.
+</p>
+
+<img class="food-img"
+src="https://cdn-media.sforum.vn/storage/app/media/wp-content/uploads/2024/02/le-hoi-hue-thumbnail.jpg">
+
+</div>
+
+</div>
+
+<footer>
+<p>Văn Hóa Huế | Website giới thiệu về Huế</p>
+</footer>
+
+<!-- NÚT QUAY LẠI -->
+<button onclick="history.back()" class="back-circle">↑</button>
+
+<script>
+
+function scrollToTop(){
+window.scrollTo({
+top:0,
+behavior:"smooth"
+});
+}
+
+let visit=localStorage.getItem("visit");
+
+if(visit){
+visit++;
+}else{
+visit=1;
+}
+
+localStorage.setItem("visit",visit);
+
+</script>
+
+</body>
+</html>
