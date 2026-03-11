@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<title>Sông Hương</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+
+body{
+    margin:0;
+    font-family:"Segoe UI",sans-serif;
+    background:#f5f0fa;
+    color:#333;
+}
+
+header{
+    background:#6a1b9a;
+    color:white;
+    text-align:center;
+    padding:30px;
+}
+
+header h1{
+    margin:0;
+    font-size:42px;
+}
+
+header p{
+    margin-top:10px;
+}
+
+.container{
+    width:80%;
+    margin:auto;
+    padding:30px 0;
+}
+
+.section{
+    margin-bottom:40px;
+}
+
+.section h2{
+    color:#6a1b9a;
+}
+
+.food-img{
+    width:100%;
+    max-width:600px;
+    display:block;
+    margin:20px auto;
+    border-radius:12px;
+    box-shadow:0 5px 12px rgba(0,0,0,0.2);
+}
+
+.card{
+    background:white;
+    padding:25px;
+    border-radius:12px;
+    box-shadow:0 4px 12px rgba(0,0,0,0.1);
+}
+
+footer{
+    background:#6a1b9a;
+    color:white;
+    text-align:center;
+    padding:15px;
+    margin-top:40px;
+}
+
+@keyframes slideDown{
+from{transform:translateY(-50px);opacity:0;}
+to{transform:translateY(0);opacity:1;}
+}
+
+
+.back-circle{
+position:fixed;
+bottom:30px;
+right:30px;
+background:#6a0dad;
+color:white;
+border:none;
+padding:12px 18px;
+border-radius:50px;
+cursor:pointer;
+}
+
+.back-circle:hover{
+background:#8e44ad;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>Sông Hương – Nét Đẹp Trữ Tình Xứ Huế</h1>
+<p>Dòng sông chảy qua trái tim Huế.</p>
+</header>
+
+
+<div class="container">
+
+<div class="section card">
+<h2>Giới thiệu về Sông Hương</h2>
+<p>
+Sông Hương là dòng sông nổi tiếng gắn liền với vẻ đẹp thơ mộng của Huế. Dòng sông chảy qua nhiều danh lam, di tích lịch sử và trở thành nguồn cảm hứng cho thơ ca, âm nhạc và nghệ thuật. Với làn nước hiền hòa và khung cảnh thiên nhiên yên bình, sông Hương đã góp phần tạo nên nét duyên dáng và trữ tình đặc trưng của cố đô Huế.
+</p>
+
+<img class="food-img"
+src="https://ik.imagekit.io/tvlk/blog/2025/03/song-huong-1-1024x682.jpeg?tr=q-70,c-at_max,w-1000,h-600">
+</div>
+
+
+<div class="section card">
+<h2>Đặc điểm của sông</h2>
+
+
+<ul>
+<li>Nguồn nước: bắt nguồn từ dãy núi Trường Sơn.</li>
+<li>Dòng chảy: uốn lượn qua nhiều cảnh đẹp trước khi chảy qua trung tâm Huế.</li>
+<li>Cảnh quan hai bên bờ: gồm đồi núi, chùa chiền, lăng tẩm và các công trình nổi tiếng.</li>
+<li>Hoạt động du lịch: du thuyền, nghe ca Huế trên sông Hương.</li>
+</ul>
+
+<p>
+Dòng chảy hiền hòa cùng cảnh quan hai bên bờ đã tạo nên vẻ đẹp thơ mộng đặc trưng của sông Hương.
+</p>
+
+</div>
+
+
+<div class="section card">
+<h2>Sông Hương và vẻ đẹp Cố Đô</h2>
+<p>
+
+</p>Đồi Vọng Cảnh không chỉ là một điểm ngắm cảnh nổi tiếng mà còn là nơi thể hiện rõ vẻ đẹp thơ mộng của Huế. Với khung cảnh thiên nhiên yên bình bên dòng Sông Hương, nơi đây đã trở thành điểm đến yêu thích của du khách khi muốn cảm nhận vẻ đẹp thanh bình và lãng mạn của cố đô Huế.
+
+<img class="food-img"
+src="https://ik.imagekit.io/tvlk/blog/2025/03/song-huong-2-1024x682.jpeg?tr=q-70,c-at_max,w-1000,h-600">
+</div>
+
+</div>
+
+<footer>
+<p>Địa điểm nổi bật | Website giới thiệu về Huế</p>
+</footer>
+
+
+<button onclick="history.back()" class="back-circle">↑</button>
+
+<script>
+
+function scrollToTop(){
+window.scrollTo({
+top:0,
+behavior:"smooth"
+});
+}
+
+let visit=localStorage.getItem("visit");
+
+if(visit){
+visit++;
+}else{
+visit=1;
+}
+
+localStorage.setItem("visit",visit);
+
+document.getElementById("visit").innerText=visit;
+
+</script>
+</body>
+</html>
