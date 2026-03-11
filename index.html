@@ -107,21 +107,21 @@ color:#6a0dad;
 
 /* CARDS */
 
-.grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+grid{
+display:flex;
 gap:20px;
-align-items:start;
+flex-wrap:wrap;
+justify-content:center;
+align-items:flex-start;
 }
-
-.card{
+card{
 background:white;
 border-radius:15px;
 overflow:hidden;
 box-shadow:0 8px 20px rgba(106,13,173,0.3);
 transition:0.4s;
-display:flex;
-flex-direction:column;
+height:auto;
+display:inline-block;
 }
 .card:hover{
 transform:translateY(-10px);
