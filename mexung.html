@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<title>Mè Xửng Huế</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+
+body{
+    margin:0;
+    font-family:"Segoe UI",sans-serif;
+    background:#f5f0fa;
+    color:#333;
+}
+
+header{
+    background:#6a1b9a;
+    color:white;
+    text-align:center;
+    padding:30px;
+}
+
+header h1{
+    margin:0;
+    font-size:42px;
+}
+
+header p{
+    margin-top:10px;
+}
+
+.container{
+    width:80%;
+    margin:auto;
+    padding:30px 0;
+}
+
+.section{
+    margin-bottom:40px;
+}
+
+.section h2{
+    color:#6a1b9a;
+}
+
+.food-img{
+    width:100%;
+    max-width:600px;
+    display:block;
+    margin:20px auto;
+    border-radius:12px;
+    box-shadow:0 5px 12px rgba(0,0,0,0.2);
+}
+
+.card{
+    background:white;
+    padding:25px;
+    border-radius:12px;
+    box-shadow:0 4px 12px rgba(0,0,0,0.1);
+}
+
+footer{
+    background:#6a1b9a;
+    color:white;
+    text-align:center;
+    padding:15px;
+    margin-top:40px;
+}
+
+@keyframes slideDown{
+from{transform:translateY(-50px);opacity:0;}
+to{transform:translateY(0);opacity:1;}
+}
+
+/* NÚT TRÒN QUAY LẠI */
+.back-circle{
+position:fixed;
+bottom:30px;
+right:30px;
+background:#6a0dad;
+color:white;
+border:none;
+padding:12px 18px;
+border-radius:50px;
+cursor:pointer;
+}
+
+.back-circle:hover{
+background:#8e44ad;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>Mè Xửng – Món Quà Ngọt Ngào Của Cố Đô Huế</h1>
+<p>Đặc sản truyền thống nổi tiếng của Huế</p>
+</header>
+
+
+<div class="container">
+
+<div class="section card">
+<h2>Giới thiệu về Mè Xửng</h2>
+<p>
+Mè xửng là một đặc sản nổi tiếng của Huế, thường được dùng làm quà tặng cho 
+du khách khi đến thăm cố đô. Món bánh này có vị ngọt thanh, dẻo mềm, 
+kết hợp với hương thơm của mè rang và đậu phộng, tạo nên một hương vị 
+đặc trưng khó quên.
+</p>
+
+<img class="food-img"
+src="https://khamphahue.com.vn/Portals/0/VanHoa/AmThuc/AmThucDanGian/MeXungHue/Me-xung-Hue-Dam-da-ban-sac-ngot-thanh-huong-vi-co-do.jpg?ver=2023-11-08-143506-717">
+</div>
+
+
+<div class="section card">
+<h2>Nguyên liệu chính</h2>
+
+<ul>
+<li>Bột nếp</li>
+<li>Đường</li>
+<li>Mạch nha</li>
+<li>Mè rang</li>
+<li>Đậu phộng rang</li>
+<li>Vani tạo hương</li>
+</ul>
+
+<p>
+Sự kết hợp giữa độ dẻo của bánh, vị bùi của đậu phộng và hương thơm của mè 
+đã tạo nên một loại bánh truyền thống mang đậm bản sắc ẩm thực Huế.
+</p>
+</div>
+
+
+<div class="section card">
+<h2>Mè Xửng trong văn hóa Huế</h2>
+<p>
+Từ lâu, mè xửng đã trở thành món quà đặc trưng của Huế. Du khách khi 
+đến tham quan cố đô thường mua mè xửng về làm quà cho người thân và bạn bè. 
+Món bánh này không chỉ thể hiện sự tinh tế của người Huế mà còn góp phần 
+giữ gìn nét đẹp của văn hóa ẩm thực truyền thống.
+</p>
+
+<img class="food-img"
+src="https://khamphahue.com.vn/Portals/0/VanHoa/AmThuc/AmThucDanGian/MeXungHue/keo-me-xung-hue-dacsanvina-123123-1689079136.jpg?ver=2023-11-08-143506-640">
+</div>
+
+</div>
+
+<footer>
+<p>Ẩm thực Huế | Website giới thiệu về Huế</p>
+</footer>
+
+
+<button onclick="history.back()" class="back-circle">↑</button>
+
+<script>
+
+function scrollToTop(){
+window.scrollTo({
+top:0,
+behavior:"smooth"
+});
+}
+
+let visit=localStorage.getItem("visit");
+
+if(visit){
+visit++;
+}else{
+visit=1;
+}
+
+localStorage.setItem("visit",visit);
+
+document.getElementById("visit").innerText=visit;
+
+</script>
+</body>
+</html>
