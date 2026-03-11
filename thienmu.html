@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<title>Chùa Thiên Mụ</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+
+body{
+    margin:0;
+    font-family:"Segoe UI",sans-serif;
+    background:#f5f0fa;
+    color:#333;
+}
+
+header{
+    background:#6a1b9a;
+    color:white;
+    text-align:center;
+    padding:30px;
+}
+
+header h1{
+    margin:0;
+    font-size:42px;
+}
+
+header p{
+    margin-top:10px;
+}
+
+.container{
+    width:80%;
+    margin:auto;
+    padding:30px 0;
+}
+
+.section{
+    margin-bottom:40px;
+}
+
+.section h2{
+    color:#6a1b9a;
+}
+
+.food-img{
+    width:100%;
+    max-width:600px;
+    display:block;
+    margin:20px auto;
+    border-radius:12px;
+    box-shadow:0 5px 12px rgba(0,0,0,0.2);
+}
+
+.card{
+    background:white;
+    padding:25px;
+    border-radius:12px;
+    box-shadow:0 4px 12px rgba(0,0,0,0.1);
+}
+
+footer{
+    background:#6a1b9a;
+    color:white;
+    text-align:center;
+    padding:15px;
+    margin-top:40px;
+}
+
+@keyframes slideDown{
+from{transform:translateY(-50px);opacity:0;}
+to{transform:translateY(0);opacity:1;}
+}
+
+
+.back-circle{
+position:fixed;
+bottom:30px;
+right:30px;
+background:#6a0dad;
+color:white;
+border:none;
+padding:12px 18px;
+border-radius:50px;
+cursor:pointer;
+}
+
+.back-circle:hover{
+background:#8e44ad;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>Đại Nội Huế – Nét Linh Thiêng Cố Đô</h1>
+<p>Chạm vào lịch sử giữa lòng Huế</p>
+</header>
+
+
+<div class="container">
+
+<div class="section card">
+<h2>Giới thiệu về Chùa Thiên Mụ</h2>
+<p>
+Chùa Thiên Mụ là một trong những ngôi chùa cổ và nổi tiếng nhất tại Huế, nằm bên bờ Sông Hương thơ mộng. Ngôi chùa được xây dựng từ năm 1601 dưới thời Chúa Nguyễn Hoàng và nổi bật với tháp Phước Duyên cao vút, kiến trúc cổ kính cùng không gian thanh tịnh.
+</p>
+
+<img class="food-img"
+src="https://res.klook.com/image/upload/w_500,h_313,c_fill,q_85/activities/sirwd9qmevlefg7p0t36.webp">
+</div>
+
+
+<div class="section card">
+<h2>Cấu trúc sơ bộ</h2>
+
+<p>
+Cấu trúc sơ bộ của Chùa Thiên Mụ gồm nhiều công trình kiến trúc Phật giáo đặc trưng, sắp xếp trên trục chính từ cổng vào đến khu chùa chính gồm:
+</p>
+
+<ul>
+<li>Cổng tam quan</li>
+<li>Tháp Phước Duyên</li>
+<li>Điện Đại Hùng</li>
+<li>Nhà bia và chuông chùa</li>
+<li>Khu vườn và các công trình phụ</li>
+</ul>
+
+
+</div>
+
+
+<div class="section card">
+<h2>Chùa Thiên Mụ trong đời sống tâm linh Huế</h2>
+<p>
+Chùa Thiên Mụ không chỉ là một ngôi chùa cổ kính mà còn là biểu tượng tâm linh nổi tiếng của Huế. Với lịch sử lâu đời, kiến trúc đặc sắc và không gian thanh bình bên dòng Sông Hương, chùa Thiên Mụ đã trở thành điểm đến quen thuộc của du khách và người dân địa phương. Ngôi chùa góp phần gìn giữ và lan tỏa những giá trị văn hóa, lịch sử và tâm linh đặc sắc của vùng đất cố đô.
+</p>
+
+<img class="food-img"
+src="https://tapchidongnama.vn/wp-content/uploads/2024/05/z5407216862895_4a78b47e24c2a1e6444c38bc8af8ac8c-300x215.jpg">
+</div>
+
+</div>
+
+<footer>
+<p>Địa điểm nổi bật | Website giới thiệu về Huế</p>
+</footer>
+
+
+<button onclick="history.back()" class="back-circle">↑</button>
+
+<script>
+
+function scrollToTop(){
+window.scrollTo({
+top:0,
+behavior:"smooth"
+});
+}
+
+let visit=localStorage.getItem("visit");
+
+if(visit){
+visit++;
+}else{
+visit=1;
+}
+
+localStorage.setItem("visit",visit);
+
+document.getElementById("visit").innerText=visit;
+
+</script>
+</body>
+</html>
