@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<title>Bún Bò Huế</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+
+body{
+    margin:0;
+    font-family:"Segoe UI",sans-serif;
+    background:#f5f0fa;
+    color:#333;
+}
+
+header{
+    background:#6a1b9a;
+    color:white;
+    text-align:center;
+    padding:30px;
+}
+
+header h1{
+    margin:0;
+    font-size:42px;
+}
+
+header p{
+    margin-top:10px;
+}
+
+.container{
+    width:80%;
+    margin:auto;
+    padding:30px 0;
+}
+
+.section{
+    margin-bottom:40px;
+}
+
+.section h2{
+    color:#6a1b9a;
+}
+
+.food-img{
+    width:100%;
+    max-width:600px;
+    display:block;
+    margin:20px auto;
+    border-radius:12px;
+    box-shadow:0 5px 12px rgba(0,0,0,0.2);
+}
+
+.card{
+    background:white;
+    padding:25px;
+    border-radius:12px;
+    box-shadow:0 4px 12px rgba(0,0,0,0.1);
+}
+
+footer{
+    background:#6a1b9a;
+    color:white;
+    text-align:center;
+    padding:15px;
+    margin-top:40px;
+}
+
+@keyframes slideDown{
+from{transform:translateY(-50px);opacity:0;}
+to{transform:translateY(0);opacity:1;}
+}
+
+
+.back-circle{
+position:fixed;
+bottom:30px;
+right:30px;
+background:#6a0dad;
+color:white;
+border:none;
+padding:12px 18px;
+border-radius:50px;
+cursor:pointer;
+}
+
+.back-circle:hover{
+background:#8e44ad;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>Bún Bò Huế – Đặc Sản Cố Đô</h1>
+<p>Món ăn nổi tiếng với hương vị đậm đà của miền Trung</p>
+</header>
+
+
+<div class="container">
+
+<div class="section card">
+<h2>Giới thiệu về Bún Bò Huế</h2>
+<p>
+Bún bò Huế là một trong những món ăn đặc trưng nổi tiếng nhất của ẩm thực Huế. 
+Món ăn gây ấn tượng với nước dùng đậm đà được nấu từ xương bò, sả và mắm ruốc Huế. 
+Sợi bún nhỏ, mềm kết hợp với thịt bò, giò heo và các loại rau sống tạo nên 
+một hương vị thơm ngon khó quên.
+</p>
+
+<img class="food-img"
+src="https://static.vinwonders.com/production/bun-bo-hue-noodles-01.jpg">
+</div>
+
+
+<div class="section card">
+<h2>Nguyên liệu chính</h2>
+
+<ul>
+<li>Bún sợi nhỏ</li>
+<li>Thịt bò</li>
+<li>Giò heo</li>
+<li>Chả Huế</li>
+<li>Sả</li>
+<li>Mắm ruốc Huế</li>
+<li>Rau sống (rau thơm, bắp chuối, giá)</li>
+<li>Ớt và sa tế</li>
+</ul>
+
+<p>
+Sự hòa quyện giữa nước dùng cay nhẹ, thơm mùi sả và vị đậm đà của mắm ruốc 
+tạo nên nét đặc trưng riêng của bún bò Huế mà khó có món bún nào giống được.
+</p>
+</div>
+
+
+<div class="section card">
+<h2>Bún Bò Huế trong văn hóa Huế</h2>
+<p>
+Bún bò Huế không chỉ là món ăn quen thuộc của người dân địa phương 
+mà còn là biểu tượng của ẩm thực cố đô. Món ăn thường được dùng 
+vào buổi sáng hoặc buổi trưa và xuất hiện ở khắp các quán ăn 
+từ bình dân đến nhà hàng tại Huế.
+</p>
+
+<img class="food-img"
+src="https://static.vinwonders.com/production/bun-bo-hue-noodles-06.jpg">
+</div>
+
+</div>
+
+<footer>
+<p>Ẩm thực Huế | Website giới thiệu về Huế</p>
+</footer>
+
+
+<button onclick="history.back()" class="back-circle">↑</button>
+
+<script>
+
+function scrollToTop(){
+window.scrollTo({
+top:0,
+behavior:"smooth"
+});
+}
+
+let visit=localStorage.getItem("visit");
+
+if(visit){
+visit++;
+}else{
+visit=1;
+}
+
+localStorage.setItem("visit",visit);
+
+document.getElementById("visit").innerText=visit;
+
+</script>
+</body>
+</html>
