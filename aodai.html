@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<title>Áo Dài Huế</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+
+body{
+    margin:0;
+    font-family:"Segoe UI",sans-serif;
+    background:#f5f0fa;
+    color:#333;
+}
+
+header{
+    background:#6a1b9a;
+    color:white;
+    text-align:center;
+    padding:30px;
+}
+
+header h1{
+    margin:0;
+    font-size:42px;
+}
+
+header p{
+    margin-top:10px;
+}
+
+.container{
+    width:80%;
+    margin:auto;
+    padding:30px 0;
+}
+
+.section{
+    margin-bottom:40px;
+}
+
+.section h2{
+    color:#6a1b9a;
+}
+
+.food-img{
+    width:100%;
+    max-width:600px;
+    display:block;
+    margin:20px auto;
+    border-radius:12px;
+    box-shadow:0 5px 12px rgba(0,0,0,0.2);
+}
+
+.card{
+    background:white;
+    padding:25px;
+    border-radius:12px;
+    box-shadow:0 4px 12px rgba(0,0,0,0.1);
+}
+
+footer{
+    background:#6a1b9a;
+    color:white;
+    text-align:center;
+    padding:15px;
+    margin-top:40px;
+}
+
+@keyframes slideDown{
+from{transform:translateY(-50px);opacity:0;}
+to{transform:translateY(0);opacity:1;}
+}
+
+/* NÚT TRÒN QUAY LẠI */
+.back-circle{
+position:fixed;
+bottom:30px;
+right:30px;
+background:#6a0dad;
+color:white;
+border:none;
+padding:12px 18px;
+border-radius:50px;
+cursor:pointer;
+}
+
+.back-circle:hover{
+background:#8e44ad;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>Áo Dài Huế</h1>
+<p>Biểu tượng của vẻ đẹp truyền thống và nét dịu dàng của người Huế</p>
+</header>
+
+
+<div class="container">
+
+<div class="section card">
+<h2>Giới thiệu về Áo Dài Huế</h2>
+<p>
+Áo dài Huế là một trong những biểu tượng văn hóa đặc trưng của vùng đất cố đô. 
+Trang phục này gắn liền với hình ảnh người phụ nữ Huế dịu dàng, thanh lịch và kín đáo. 
+Từ thời triều Nguyễn, áo dài đã được sử dụng phổ biến trong cung đình và đời sống thường ngày, 
+dần trở thành trang phục truyền thống tiêu biểu của Việt Nam.
+</p>
+
+<img class="food-img"
+src="https://file3.qdnd.vn/data/images/14/2023/03/09/manhthang/thhhhh.jpg?dpi=150&quality=100&w=870">
+
+</div>
+
+
+<div class="section card">
+<h2>Đặc điểm</h2>
+
+<ul>
+<li>Thiết kế thanh lịch, ôm dáng, tôn lên vẻ đẹp dịu dàng của người mặc.</li>
+<li>Tà áo dài thướt tha kết hợp với quần dài tạo sự duyên dáng.</li>
+<li>Màu sắc thường nhẹ nhàng như tím Huế, trắng hoặc pastel.</li>
+<li>Thường được mặc trong các dịp lễ hội, sự kiện văn hóa và trường học.</li>
+</ul>
+
+<img class="food-img"
+src="https://api.sovaba.travel/uploads/Net_duyen_tham_lang_cua_nhung_chiec_ao_dai_hue_thuong_05eb4ad63d.jpg">
+
+</div>
+
+
+<div class="section card">
+<h2>Giá trị văn hóa</h2>
+
+<p>
+Áo dài Huế không chỉ là trang phục mà còn là biểu tượng của văn hóa và bản sắc dân tộc. 
+Nó thể hiện vẻ đẹp kín đáo, duyên dáng và tinh tế của người phụ nữ Việt Nam. 
+Ngày nay áo dài vẫn được sử dụng rộng rãi trong các lễ hội, trường học và sự kiện quan trọng, 
+góp phần giữ gìn và quảng bá văn hóa Việt Nam ra thế giới.
+</p>
+
+<img class="food-img"
+src="https://file.huengaynay.vn/data2/image/news/2019/20190315/origin/8701552658981.jpg">
+
+</div>
+
+</div>
+
+<footer>
+<p>Văn Hóa Huế | Website giới thiệu về Huế</p>
+</footer>
+
+<!-- NÚT QUAY LẠI -->
+<button onclick="history.back()" class="back-circle">↑</button>
+
+<script>
+
+function scrollToTop(){
+window.scrollTo({
+top:0,
+behavior:"smooth"
+});
+}
+
+let visit=localStorage.getItem("visit");
+
+if(visit){
+visit++;
+}else{
+visit=1;
+}
+
+localStorage.setItem("visit",visit);
+
+</script>
+
+</body>
+</html>
