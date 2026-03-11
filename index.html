@@ -104,26 +104,27 @@ color:#6a0dad;
 
 /* CARDS */
 
-grid{
-display:grid;
-grid-template-columns:repeat(3,1fr);
-gap:25px;
-max-width:1000px;
-margin:auto;
+.grid{
+display:flex;
+gap:20px;
+flex-wrap:wrap;
+justify-content:center;
 }
-card{
+
+.card{
 background:white;
+width:300px;
 border-radius:15px;
 overflow:hidden;
 box-shadow:0 8px 20px rgba(106,13,173,0.3);
-text-align:center;
-transition:0.3s;
+transition:0.4s;
 }
+
 .card:hover{
 transform:translateY(-10px);
 }
 
-card img{
+.card img{
 width:100%;
 height:200px;
 object-fit:cover;
@@ -329,29 +330,25 @@ to{transform:translateY(0);opacity:1;}
 </div>
 
 <div class="card">
-<img src="https://thanhphohue.com/wp-content/uploads/2022/09/com_hen_hue_08-768x512.jpg">
-<a href="comhen.html" style="text-decoration:none; color:black;">
-<h3>Cơm Hến</h3>
-<p>Món ăn dân dã riêng của Huế.</p>
-</div>
-
-<div class="card">
 <img src="https://statics.vinpearl.com/banh-ep-hue-1_1628480877_1680010166.jpg">
 <h3>Bánh Ép</h3>
 <p>Món ăn thân thuộc của Huế.</p>
 </div>
-
 <div class="card">
 <img src="https://laque.vn/wp-content/uploads/2022/07/che-hue-laquevn-0-1024x587.jpg">
 <h3>Chè Huế</h3>
 <p>Sắc ngọt dịu dàng của ẩm thực Cố đô.</p>
 </div>
-
+<div class="card">
+<img src="https://thanhphohue.com/wp-content/uploads/2022/09/com_hen_hue_08-768x512.jpg">
+<a href="tt.html" style="text-decoration:none; color:black;">
+<h3>Cơm Hến</h3>
+<p>Món ăn dân dã riêng của Huế.</p>
+</div>
 <div class="card">
 <img src="https://nongsandungha.com/wp-content/uploads/2022/09/me-xung-3.jpg">
 <h3>Mè Xửng</h3>
 <p>Món quà ngọt ngào của Cố đô.</p>
-</div>
 </div>
 
 </section>
@@ -486,5 +483,3 @@ document.getElementById("visit").innerText=visit;
 
 </body>
 </html>
-
-
