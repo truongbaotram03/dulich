@@ -256,13 +256,17 @@ to{transform:translateY(0);opacity:1;}
 
 <div class="card">
 <img src="https://bazantravel.com/cdn/medias/uploads/70/70246-gioi-thieu-hue-700x408.jpg">
+ <a href= "dainoi.html" style="text-decoration:none; color:black;">
+ </a>
 <h3>Đại Nội Huế</h3>
 <p>Di sản văn hóa thế giới.</p>
 </div>
 
 <div class="card">
 <img src="https://atypikvietnam.com/wp-content/uploads/2022/04/pagode-de-la-Dame-c%C3%A9leste-%E2%80%93-Thien-Mu.jpg">
+ <a href= "thienmu.html" style="text-decoration:none; color:black;">
 <h3>Chùa Thiên Mụ</h3>
+ </a>
 <p>Biểu tượng tâm linh Huế.</p>
 </div>
 <div class="card">
@@ -371,25 +375,33 @@ to{transform:translateY(0);opacity:1;}
 
 <div class="card">
 <img src="https://suckhoedoisong.qltns.mediacdn.vn/324455921873985536/2023/2/1/anh-7-1675211877542-16752118776232027728854.jpg">
+ <a href= "nhacungdinh.html" style="text-decoration:none; color:black;">
 <h3>Nhã Nhạc Cung Đình</h3>
+ </a>
 <p>Di sản văn hóa phi vật thể được UNESCO công nhận.</p>
 </div>
 
 <div class="card">
 <img src="https://laque.vn/wp-content/uploads/2022/07/ao-dai-hue-4-jpg.webp">
+ <a href= "aodai.html" style="text-decoration:none; color:black;">
 <h3>Áo Dài Huế</h3>
+ </a>
 <p>Trang phục truyền thống dịu dàng, thanh lịch.</p>
 </div>
 
 <div class="card">
 <img src="https://image.vietnamnews.vn/uploadvnnews/Article/2017/12/19/1-festival-hue31355844PM.jpg">
+ <a href= "lehoi.html" style="text-decoration:none; color:black;">
 <h3>Lễ Hội Huế</h3>
+ </a>
 <p>Festival Huế nổi tiếng với nhiều hoạt động văn hóa đặc sắc.</p>
 </div>
 
 <div class="card">
 <img src="https://grouptourvietnam.com/wp-content/uploads/2018/04/hue-dinner-cruise-on.jpg">
+ <a href= "cahue.html" style="text-decoration:none; color:black;">
 <h3>Ca Huế Trên Sông Hương</h3>
+ </a>
 <p>Loại hình nghệ thuật truyền thống đặc sắc của cố đô.</p>
 </div>
 
@@ -467,21 +479,17 @@ src="https://maps.google.com/maps?q=hue%20vietnam&t=&z=13&ie=UTF8&iwloc=&output=
 
 <script>
 
-
 function scrollToTop(){
-
 window.scrollTo({
 top:0,
 behavior:"smooth"
 });
-
 }
 
-
-fetch("https://api.countapi.xyz/hit/dulichhue/visits")
-.then(res=>res.json())
-.then(res=>{
-document.getElementById("visit").innerText=res.value;
+fetch("https://api.countapi.xyz/hit/truongbaotram03/dulich")
+.then(response => response.json())
+.then(data => {
+document.getElementById("visit").innerText = data.value;
 });
 
 </script>
