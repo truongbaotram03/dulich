@@ -492,20 +492,31 @@ src="https://maps.google.com/maps?q=hue%20vietnam&t=&z=13&ie=UTF8&iwloc=&output=
 
 <script>
 
+/* Nút về đầu trang */
+
 function scrollToTop(){
+
 window.scrollTo({
 top:0,
 behavior:"smooth"
 });
+
 }
 
-fetch("https://api.countapi.xyz/hit/truongbaotram03/dulich")
-.then(response => response.json())
-.then(data => {
-document.getElementById("visit").innerText = data.value;
-});
+/* Đếm lượt truy cập */
+
+let visit=localStorage.getItem("visit");
+
+if(visit){
+visit++;
+}else{
+visit=1;
+}
+
+localStorage.setItem("visit",visit);
+
+document.getElementById("visit").innerText=visit;
 
 </script>
-
 </body>
 </html>
